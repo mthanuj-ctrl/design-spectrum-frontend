@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design Spectrum</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700;900&family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- Nav ticker -->
+<header id="nav-ticker">
+  <span class="wordmark">Design Spectrum</span>
+  <span id="nav-active-label">Scroll to explore</span>
+  <div id="nav-dots">
+    <div class="nav-pip active" data-target="skeuo"></div>
+    <div class="nav-pip" data-target="neo"></div>
+    <div class="nav-pip" data-target="glass"></div>
+    <div class="nav-pip" data-target="mini"></div>
+    <div class="nav-pip" data-target="maxi"></div>
+    <div class="nav-pip" data-target="brutal"></div>
+    <div class="nav-pip" data-target="liquid"></div>
+    <div class="nav-pip" data-target="bento"></div>
+    <div class="nav-pip" data-target="spatial"></div>
+    <div class="nav-pip" data-target="clay"></div>
+    <div class="nav-pip" data-target="cyber"></div>
+    <div class="nav-pip" data-target="pixel"></div>
+    <div class="nav-pip" data-target="aurora"></div>
+    <div class="nav-pip" data-target="swiss"></div>
+    <div class="nav-pip" data-target="y2k"></div>
+    <div class="nav-pip" data-target="term"></div>
+    <div class="nav-pip" data-target="memphis"></div>
+    <div class="nav-pip" data-target="neubrut"></div>
+  </div>
+</header>
+
+<!-- ═══ 01 SKEUOMORPHISM ═══ -->
+<section class="section" id="skeuo">
+  <div class="section-tag reveal">Skeuomorphism</div>
+  <h2 class="section-title reveal reveal-delay-1">Touching the real.</h2>
+  <p class="section-sub reveal reveal-delay-2">When interfaces borrowed from the physical world — leather, metal, wood grain, and pressed glass. Your fingers knew what to do.</p>
+  <div class="skeuo-desk reveal reveal-delay-3">
+    <div class="skeuo-notepad" id="skeuoNotepad">
+      <div class="skeuo-spiral">
+        <div class="skeuo-coil"></div><div class="skeuo-coil"></div><div class="skeuo-coil"></div>
+        <div class="skeuo-coil"></div><div class="skeuo-coil"></div><div class="skeuo-coil"></div>
+        <div class="skeuo-coil"></div><div class="skeuo-coil"></div>
+      </div>
+      <div class="skeuo-paper">
+        <div class="skeuo-text-sim">
+          <span style="width:90%"></span>
+          <span style="width:70%"></span>
+          <span style="width:85%"></span>
+          <div class="skeuo-line" style="margin:16px 0 12px;"></div>
+          <span style="width:60%"></span>
+          <span style="width:80%"></span>
+          <span style="width:45%"></span>
+          <div class="skeuo-line" style="margin:16px 0 12px;"></div>
+          <span style="width:75%"></span>
+        </div>
+      </div>
+    </div>
+    <div class="skeuo-controls">
+      <button class="skeuo-btn" id="skeuoBtn">Press</button>
+      <div class="skeuo-toggle-wrap">
+        <span class="skeuo-toggle-label">Texture</span>
+        <div class="skeuo-toggle on" id="skeuoToggle">
+          <div class="skeuo-toggle-knob"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 02 NEOMORPHISM ═══ -->
+<section class="section" id="neo">
+  <div class="section-tag reveal">Neomorphism</div>
+  <h2 class="section-title reveal reveal-delay-1">Soft depth.</h2>
+  <p class="section-sub reveal reveal-delay-2">One color. Two shadows. Shapes that seem to press out from or sink into the surface — minimal, tactile, meditative.</p>
+  <div class="reveal reveal-delay-3">
+    <div class="neo-player">
+      <div class="neo-album">🎵</div>
+      <div class="neo-track">
+        <div class="neo-track-name">Ambient Drift</div>
+        <div class="neo-track-artist">Soft Systems</div>
+      </div>
+      <div class="neo-progress-wrap" id="neoProgress">
+        <div class="neo-progress-fill" id="neoFill"></div>
+      </div>
+      <div class="neo-controls">
+        <button class="neo-ctrl-btn" id="neoShuffle">⇄</button>
+        <button class="neo-ctrl-btn" id="neoPrev">⏮</button>
+        <button class="neo-ctrl-btn play-btn" id="neoPlay">⏵</button>
+        <button class="neo-ctrl-btn" id="neoNext">⏭</button>
+        <button class="neo-ctrl-btn" id="neoRepeat">↺</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 03 GLASSMORPHISM ═══ -->
+<section class="section" id="glass">
+  <div class="glass-orb"></div>
+  <div class="glass-orb"></div>
+  <div class="glass-orb"></div>
+  <div class="section-tag reveal">Glassmorphism</div>
+  <h2 class="section-title reveal reveal-delay-1">See through it.</h2>
+  <p class="section-sub reveal reveal-delay-2">Frosted panels suspended above shifting color. The interface becomes a window — transparent, layered, luminous.</p>
+  <div class="glass-dashboard reveal reveal-delay-3">
+    <div class="glass-panel wide">
+      <div class="glass-panel-label">Total Revenue</div>
+      <div class="glass-panel-value">$84,291</div>
+      <div class="glass-panel-sub">↑ 12.4% from last month</div>
+      <div class="glass-bar-wrap"><div class="glass-bar-fill" style="width:72%"></div></div>
+    </div>
+    <div class="glass-panel">
+      <div class="glass-panel-label">Active Users</div>
+      <div class="glass-panel-value">2,847</div>
+      <div class="glass-stat-grid">
+        <div class="glass-stat"><div class="glass-stat-n">1.2k</div><div class="glass-stat-l">New</div></div>
+        <div class="glass-stat"><div class="glass-stat-n">94%</div><div class="glass-stat-l">Retain</div></div>
+      </div>
+    </div>
+    <div class="glass-panel">
+      <div class="glass-panel-label">Team</div>
+      <div class="glass-avatar-row">
+        <div class="glass-avatar">🧑</div>
+        <div class="glass-avatar">👩</div>
+        <div class="glass-avatar">🧔</div>
+        <div class="glass-avatar" style="font-size:0.7rem;color:rgba(255,255,255,0.5)">+8</div>
+      </div>
+      <div class="glass-panel-sub" style="margin-top:12px;">11 members online</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 04 MINIMALISM ═══ -->
+<section class="section" id="mini">
+  <div class="section-tag reveal">Minimalism</div>
+  <h2 class="section-title reveal reveal-delay-1"><em>Only what matters.</em></h2>
+  <p class="section-sub reveal reveal-delay-2">Negative space as a design decision. Every element earns its presence. Nothing decorates — everything communicates.</p>
+  <div class="mini-layout reveal reveal-delay-3">
+    <div class="mini-col">
+      <div class="mini-item">
+        <span class="mini-item-label">Words written</span>
+        <span class="mini-item-value">12,480</span>
+      </div>
+      <div class="mini-rule"></div>
+      <div class="mini-item">
+        <span class="mini-item-label">Reading time</span>
+        <span class="mini-item-value">41 min</span>
+        <span class="mini-item-note">At 300 words per minute, give or take a distraction.</span>
+      </div>
+      <div class="mini-rule"></div>
+      <div class="mini-input-row">
+        <input class="mini-input" type="text" placeholder="Add a thought..." id="miniInput">
+        <button class="mini-send" id="miniSend">Send →</button>
+      </div>
+    </div>
+    <div class="mini-divider-v"></div>
+    <div class="mini-col">
+      <div class="mini-item">
+        <span class="mini-item-label">Preferences</span>
+      </div>
+      <div class="mini-toggle-group">
+        <div class="mini-toggle-row">
+          <span class="mini-toggle-text">Dark reading mode</span>
+          <div class="mini-switch on" data-switch></div>
+        </div>
+        <div class="mini-toggle-row">
+          <span class="mini-toggle-text">Focus mode</span>
+          <div class="mini-switch" data-switch></div>
+        </div>
+        <div class="mini-toggle-row">
+          <span class="mini-toggle-text">Auto-save drafts</span>
+          <div class="mini-switch on" data-switch></div>
+        </div>
+        <div class="mini-toggle-row">
+          <span class="mini-toggle-text">Email digest</span>
+          <div class="mini-switch" data-switch></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 05 MAXIMALISM ═══ -->
+<section class="section" id="maxi">
+  <div class="maxi-bg-pattern"></div>
+  <div class="maxi-grid-overlay"></div>
+  <div class="section-tag reveal">Maximalism</div>
+  <h2 class="section-title reveal reveal-delay-1">All of it, now.</h2>
+  <p class="section-sub reveal reveal-delay-2">Restraint is overrated. Bold, clashing, layered, alive. The aesthetic of abundance and unfiltered joy.</p>
+  <div class="maxi-content reveal reveal-delay-3">
+    <div class="maxi-headline-wrap">
+      <div class="maxi-sticker-row">
+        <div class="maxi-sticker">✦ Wild</div>
+        <div class="maxi-sticker">★ Bold</div>
+        <div class="maxi-sticker">⚡ Loud</div>
+        <div class="maxi-sticker">⬡ Free</div>
+      </div>
+      <div class="maxi-big-text">MAXIMUM</div>
+      <div class="maxi-counter-row">
+        <div class="maxi-counter"><div class="maxi-counter-n" data-target="847">0</div><div class="maxi-counter-l">Colors Used</div></div>
+        <div class="maxi-counter"><div class="maxi-counter-n" data-target="∞">0</div><div class="maxi-counter-l">Rules Broken</div></div>
+        <div class="maxi-counter"><div class="maxi-counter-n" data-target="100">0</div><div class="maxi-counter-l">% Loud</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 06 BRUTALISM ═══ -->
+<section class="section" id="brutal">
+  <div class="section-tag reveal">Brutalism</div>
+  <h2 class="section-title reveal reveal-delay-1">BARE AND HONEST.</h2>
+  <p class="section-sub reveal reveal-delay-2">Raw materials, exposed structure. Design as confrontation — deliberately refusing polish in favor of directness.</p>
+  <div class="brutal-layout reveal reveal-delay-3">
+    <div class="brutal-card-main" id="brutalCard">
+      <span class="brutal-eyebrow">Breaking</span>
+      <div class="brutal-heading">Design Has No Rules.</div>
+      <p class="brutal-body">The grid is a suggestion. The baseline is negotiable. The only rule is that the thing must communicate — and sometimes screaming is the right volume.</p>
+      <div style="margin-top:16px;">
+        <div class="brutal-progress-label">Ugliness →</div>
+        <div class="brutal-progress-outer">
+          <div class="brutal-progress-inner" id="brutalBar" style="width:0%" data-label="78%"></div>
+        </div>
+      </div>
+      <button class="brutal-btn-main" id="brutalBtn">CLICK THIS NOW</button>
+    </div>
+    <div class="brutal-sidebar">
+      <div class="brutal-tag-block">RAW</div>
+      <div class="brutal-tag-block b2">BOLD</div>
+      <div class="brutal-tag-block b3">REAL</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 07 LIQUID GLASS ═══ -->
+<section class="section" id="liquid">
+  <div class="liquid-blob"></div>
+  <div class="liquid-blob"></div>
+  <div class="liquid-blob"></div>
+  <div class="section-tag reveal">Liquid Glass</div>
+  <h2 class="section-title reveal reveal-delay-1">Fluid and alive.</h2>
+  <p class="section-sub reveal reveal-delay-2">Morphing organic shapes beneath ultra-blurred glass — iridescent, shifting, never still. The interface as a living material.</p>
+  <div class="liquid-ui reveal reveal-delay-3">
+    <div class="liquid-panel">
+      <span class="liquid-panel-icon">🌊</span>
+      <div class="liquid-panel-title">Flow State</div>
+      <div class="liquid-panel-text">The surface shifts. The content holds. Blur as a design material.</div>
+      <span class="liquid-pill">Active</span>
+    </div>
+    <div class="liquid-panel">
+      <span class="liquid-panel-icon">✦</span>
+      <div class="liquid-panel-title">Refraction</div>
+      <div class="liquid-panel-text">Light bends through glass. Color emerges on the other side of blur.</div>
+      <span class="liquid-pill">Iridescent</span>
+    </div>
+    <div class="liquid-panel">
+      <span class="liquid-panel-icon">⬡</span>
+      <div class="liquid-panel-title">Morph</div>
+      <div class="liquid-panel-text">Shapes that don't stay. Forms that breathe and evolve in real time.</div>
+      <span class="liquid-pill">Organic</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 08 BENTO GRID ═══ -->
+<section class="section" id="bento">
+  <div class="section-tag reveal">Bento Grid</div>
+  <h2 class="section-title reveal reveal-delay-1">Every card its place.</h2>
+  <p class="section-sub reveal reveal-delay-2">Named after the Japanese lunch box — modular, varied, intentional. Information arranged like ingredients: balanced and complete.</p>
+  <div class="bento-grid reveal reveal-delay-3">
+    <div class="bento-cell bc1">
+      <div>
+        <span class="bento-tag">Overview</span>
+        <div class="bento-big">Dashboard</div>
+      </div>
+      <div>
+        <div class="bento-cell-label">Last updated</div>
+        <div style="font-size:0.85rem;color:rgba(255,255,255,0.5);">Just now</div>
+      </div>
+    </div>
+    <div class="bento-cell bc2">
+      <div class="bento-cell-label">Sessions</div>
+      <div class="bento-cell-value">14,820</div>
+      <div class="bento-mini-bar">
+        <div class="bento-bar-seg filled" style="background:#3b82f6"></div>
+        <div class="bento-bar-seg filled" style="background:#3b82f6;opacity:0.7"></div>
+        <div class="bento-bar-seg filled" style="background:#3b82f6;opacity:0.5"></div>
+        <div class="bento-bar-seg" style="background:#3b82f6;opacity:0.2"></div>
+        <div class="bento-bar-seg" style="background:#3b82f6;opacity:0.2"></div>
+      </div>
+    </div>
+    <div class="bento-cell bc3">
+      <div class="bento-cell-icon">🔔</div>
+      <div class="bento-cell-sub">3 alerts</div>
+    </div>
+    <div class="bento-cell bc4">
+      <div class="bento-cell-label">Score</div>
+      <div class="bento-cell-value">98</div>
+    </div>
+    <div class="bento-cell bc5">
+      <div class="bento-cell-label">Mood</div>
+      <div class="bento-dot-row">
+        <div class="bento-dot" style="background:#f472b6;width:12px;height:12px;"></div>
+        <div class="bento-dot" style="background:#f472b6;width:10px;height:10px;opacity:0.6"></div>
+        <div class="bento-dot" style="background:#f472b6;width:8px;height:8px;opacity:0.3"></div>
+      </div>
+    </div>
+    <div class="bento-cell bc6">
+      <div class="bento-cell-label">Today</div>
+      <div class="bento-cell-value" style="font-size:1.1rem">Mon 19 Jun</div>
+    </div>
+    <div class="bento-cell bc7">
+      <div class="bento-cell-label">Activity</div>
+      <div style="display:flex;gap:4px;align-items:flex-end;margin-top:8px;">
+        <div style="width:8px;height:24px;background:#93c5fd;border-radius:3px;opacity:0.6"></div>
+        <div style="width:8px;height:38px;background:#93c5fd;border-radius:3px;opacity:0.8"></div>
+        <div style="width:8px;height:18px;background:#93c5fd;border-radius:3px;opacity:0.4"></div>
+        <div style="width:8px;height:52px;background:#93c5fd;border-radius:3px;opacity:1"></div>
+        <div style="width:8px;height:32px;background:#93c5fd;border-radius:3px;opacity:0.7"></div>
+        <div style="width:8px;height:44px;background:#93c5fd;border-radius:3px;opacity:0.9"></div>
+        <div style="width:8px;height:28px;background:#93c5fd;border-radius:3px;opacity:0.5"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 09 SPATIAL UI ═══ -->
+<section class="section" id="spatial">
+  <div class="spatial-starfield"></div>
+  <div class="section-tag reveal">Spatial UI</div>
+  <h2 class="section-title reveal reveal-delay-1">Design has depth.</h2>
+  <p class="section-sub reveal reveal-delay-2">Z-axis as a real design dimension. Elements float, rotate, and respond to where you look. Inspired by headset interfaces.</p>
+  <div class="spatial-scene reveal reveal-delay-3" id="spatialScene">
+    <div class="spatial-card" data-depth="0.3">
+      <div class="spatial-card-glow" style="background:#7c3aed"></div>
+      <div class="spatial-card-icon">🪐</div>
+      <div class="spatial-card-label">Orbit</div>
+      <div class="spatial-card-sub">Gravity</div>
+    </div>
+    <div class="spatial-card" data-depth="0.6">
+      <div class="spatial-card-glow" style="background:#0e7490"></div>
+      <div class="spatial-card-icon">🌌</div>
+      <div class="spatial-card-label">Nebula</div>
+      <div class="spatial-card-sub">Distance</div>
+    </div>
+    <div class="spatial-card" data-depth="0.9">
+      <div class="spatial-card-glow" style="background:#be185d"></div>
+      <div class="spatial-card-icon">🚀</div>
+      <div class="spatial-card-label">Launch</div>
+      <div class="spatial-card-sub">Velocity</div>
+    </div>
+    <div class="spatial-card" data-depth="0.5">
+      <div class="spatial-card-glow" style="background:#166534"></div>
+      <div class="spatial-card-icon">🌟</div>
+      <div class="spatial-card-label">Star</div>
+      <div class="spatial-card-sub">Luminance</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 10 CLAYMORPHISM ═══ -->
+<section class="section" id="clay">
+  <div class="section-tag reveal">Claymorphism</div>
+  <h2 class="section-title reveal reveal-delay-1">Squish it.</h2>
+  <p class="section-sub reveal reveal-delay-2">Soft, puffy, tactile — like touching molded clay. Inner light, rounded everything, and a playfulness that makes you want to press things.</p>
+  <div class="clay-scene reveal reveal-delay-3">
+    <div class="clay-card tall">
+      <div class="clay-card-icon">🧸</div>
+      <div class="clay-card-title">Soft Card</div>
+      <div class="clay-card-note">Hover me</div>
+    </div>
+    <div class="clay-card round">
+      <div class="clay-card-icon">🍑</div>
+    </div>
+    <div class="clay-card tall">
+      <div class="clay-card-icon">🎨</div>
+      <div class="clay-card-title">Color</div>
+      <div class="clay-card-note">Pastel world</div>
+    </div>
+  </div>
+  <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:28px;" class="reveal reveal-delay-3">
+    <div class="clay-badge"><div class="clay-badge-dot" style="background:#f87171"></div>In Progress</div>
+    <div class="clay-badge"><div class="clay-badge-dot" style="background:#34d399"></div>Complete</div>
+    <div class="clay-badge"><div class="clay-badge-dot" style="background:#60a5fa"></div>Pending</div>
+  </div>
+</section>
+
+<!-- ═══ 11 CYBERPUNK ═══ -->
+<section class="section" id="cyber">
+  <div class="cy-grid"></div>
+  <div class="section-tag reveal">Cyberpunk Neon</div>
+  <h2 class="section-title reveal reveal-delay-1 cy-glitch">Night city UI.</h2>
+  <p class="section-sub reveal reveal-delay-2">Neon outlines, scanlines, clipped corners. Hover the title for a glitch. Dark city, bright signs.</p>
+  <div class="cy-panel reveal reveal-delay-3">
+    <div class="cy-row"><span>SYSTEM</span><b id="cyStat">ONLINE</b></div>
+    <div class="cy-bar"><i id="cyBar"></i></div>
+    <button class="cy-btn" id="cyBtn">HACK THE GRID</button>
+  </div>
+</section>
+
+<!-- ═══ 12 PIXEL ═══ -->
+<section class="section" id="pixel">
+  <div class="section-tag reveal">Retro Pixel</div>
+  <h2 class="section-title reveal reveal-delay-1">Insert coin.</h2>
+  <p class="section-sub reveal reveal-delay-2">8-bit fonts, hard shadows, zero rounded corners. Click the coin.</p>
+  <div class="px-box reveal reveal-delay-3">
+    <div class="px-score">COINS <b id="pxN">0</b></div>
+    <button class="px-coin" id="pxCoin">●</button>
+    <div class="px-hearts" id="pxH">♥♥♥</div>
+    <button class="px-btn" id="pxReset">RESET</button>
+  </div>
+</section>
+
+<!-- ═══ 13 AURORA ═══ -->
+<section class="section" id="aurora">
+  <div class="au-glow" id="auGlow"></div>
+  <div class="section-tag reveal">Aurora Gradient</div>
+  <h2 class="section-title reveal reveal-delay-1">Light that follows.</h2>
+  <p class="section-sub reveal reveal-delay-2">A huge blurred conic gradient behind frosted content. Move your mouse over this section.</p>
+  <div class="au-card reveal reveal-delay-3">
+    <h3>Move your mouse</h3>
+    <p>The glow chases your pointer while it slowly spins.</p>
+    <div class="au-chips"><span>Gradient</span><span>Blur</span><span>Glow</span></div>
+  </div>
+</section>
+
+<!-- ═══ 14 SWISS ═══ -->
+<section class="section" id="swiss">
+  <div class="section-tag reveal">Swiss / International</div>
+  <h2 class="section-title reveal reveal-delay-1">Grid. Type. Red.</h2>
+  <p class="section-sub reveal reveal-delay-2">A strict grid, heavy sans-serif, one accent colour. Hover a cell.</p>
+  <div class="sw-grid reveal reveal-delay-3">
+    <div class="sw-cell"><b>01</b><span>Grid</span></div>
+    <div class="sw-cell"><b>02</b><span>Type</span></div>
+    <div class="sw-cell"><b>03</b><span>Space</span></div>
+    <div class="sw-cell"><b>04</b><span>Contrast</span></div>
+  </div>
+</section>
+
+<!-- ═══ 15 Y2K ═══ -->
+<section class="section" id="y2k">
+  <div class="section-tag reveal">Y2K Chrome</div>
+  <h2 class="section-title reveal reveal-delay-1">Welcome to 2000.</h2>
+  <p class="section-sub reveal reveal-delay-2">Glossy gel buttons, chrome text, candy gradients and striped progress bars.</p>
+  <div class="y2-win reveal reveal-delay-3">
+    <div class="y2-bar"><span>my_page.exe</span><i>✕</i></div>
+    <div class="y2-body">
+      <p>Ready to download the future?</p>
+      <button class="y2-btn" id="y2Btn">Download ⬇</button>
+      <div class="y2-prog"><i id="y2P"></i></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 16 TERMINAL ═══ -->
+<section class="section" id="term">
+  <div class="section-tag reveal">Terminal</div>
+  <h2 class="section-title reveal reveal-delay-1">$ hello_world</h2>
+  <p class="section-sub reveal reveal-delay-2">A working fake shell. Type help, then try "go clay".</p>
+  <div class="tm-win reveal reveal-delay-3">
+    <div class="tm-out" id="tmOut">Design Spectrum shell v1.0. Type help.</div>
+    <div class="tm-line">$<input id="tmIn" type="text" aria-label="terminal input" autocomplete="off" spellcheck="false"></div>
+  </div>
+</section>
+
+<!-- ═══ 17 MEMPHIS ═══ -->
+<section class="section" id="memphis">
+  <div class="section-tag reveal">Memphis Pop</div>
+  <h2 class="section-title reveal reveal-delay-1">Shapes everywhere.</h2>
+  <p class="section-sub reveal reveal-delay-2">80s confetti geometry, thick outlines, loud colours. Press the button to remix.</p>
+  <div class="mm-stage reveal reveal-delay-3">
+    <div class="mm-s mm-s1"></div><div class="mm-s mm-s2"></div><div class="mm-s mm-s3"></div><div class="mm-s mm-s4"></div>
+    <h3>Remix me</h3>
+    <p>Colours live in CSS variables, so one click repaints everything.</p>
+    <button class="mm-btn" id="mmBtn">Shuffle colours</button>
+  </div>
+</section>
+
+<!-- ═══ 18 NEUBRUTALISM ═══ -->
+<section class="section" id="neubrut">
+  <div class="section-tag reveal">Neubrutalism</div>
+  <h2 class="section-title reveal reveal-delay-1">Friendly and loud.</h2>
+  <p class="section-sub reveal reveal-delay-2">Brutalism softened: pastel fills, rounded corners, thick borders and hard shadows.</p>
+  <div class="nb-wrap reveal reveal-delay-3">
+    <div class="nb-tabs"><button class="on">Todo</button><button>Doing</button><button>Done</button></div>
+    <div class="nb-card" id="nbCard" style="background:#fde68a"><h3>Design the hero section</h3><p>Pick a tab to swap the card.</p><span class="nb-pill">3 tasks</span></div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-title">eighteen styles, one scroll.</div>
+  <div class="footer-list">
+    <span class="footer-pill">Skeuomorphism</span>
+    <span class="footer-pill">Neomorphism</span>
+    <span class="footer-pill">Glassmorphism</span>
+    <span class="footer-pill">Minimalism</span>
+    <span class="footer-pill">Maximalism</span>
+    <span class="footer-pill">Brutalism</span>
+    <span class="footer-pill">Liquid Glass</span>
+    <span class="footer-pill">Bento Grid</span>
+    <span class="footer-pill">Spatial UI</span>
+    <span class="footer-pill">Claymorphism</span>
+    <span class="footer-pill">Cyberpunk</span>
+    <span class="footer-pill">Retro Pixel</span>
+    <span class="footer-pill">Aurora</span>
+    <span class="footer-pill">Swiss</span>
+    <span class="footer-pill">Y2K Chrome</span>
+    <span class="footer-pill">Terminal</span>
+    <span class="footer-pill">Memphis</span>
+    <span class="footer-pill">Neubrutalism</span>
+  </div>
+  <div class="footer-note">Design Spectrum © 2026</div>
+</footer>
+
+<script>
+/* ─── CURSOR ─── */
+const cursor = document.getElementById('cursor');
+const cursorRing = document.getElementById('cursor-ring');
+let mx = -100, my = -100;
+let rx = -100, ry = -100;
+
+document.addEventListener('mousemove', e => {
+  mx = e.clientX; my = e.clientY;
+  cursor.style.left = mx + 'px';
+  cursor.style.top = my + 'px';
+});
+
+function animRing() {
+  rx += (mx - rx) * 0.12;
+  ry += (my - ry) * 0.12;
+  cursorRing.style.left = rx + 'px';
+  cursorRing.style.top = ry + 'px';
+  requestAnimationFrame(animRing);
+}
+animRing();
+
+document.querySelectorAll('button, [data-switch], .skeuo-toggle, .nav-pip, .bento-cell, .glass-panel, .clay-card, .liquid-panel, .spatial-card, .mini-switch').forEach(el => {
+  el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
+  el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
+});
+
+/* ─── NAV ─── */
+const sections = document.querySelectorAll('.section[id]');
+const pips = document.querySelectorAll('.nav-pip');
+const activeLabel = document.getElementById('nav-active-label');
+const names = {
+  skeuo: 'Skeuomorphism',
+  neo: 'Neomorphism',
+  glass: 'Glassmorphism',
+  mini: 'Minimalism',
+  maxi: 'Maximalism',
+  brutal: 'Brutalism',
+  liquid: 'Liquid Glass',
+  bento: 'Bento Grid',
+  spatial: 'Spatial UI',
+  clay: 'Claymorphism',
+  cyber: 'Cyberpunk',
+  pixel: 'Retro Pixel',
+  aurora: 'Aurora',
+  swiss: 'Swiss',
+  y2k: 'Y2K Chrome',
+  term: 'Terminal',
+  memphis: 'Memphis',
+  neubrut: 'Neubrutalism'
+};
+
+pips.forEach(pip => {
+  pip.addEventListener('click', () => {
+    document.getElementById(pip.dataset.target)?.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+const io = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    const id = entry.target.id;
+    pips.forEach(p => p.classList.toggle('active', p.dataset.target === id));
+    activeLabel.textContent = names[id] || '';
+    document.getElementById('nav-ticker').classList.toggle('on-light', ['neo','mini','brutal','bento','clay','swiss','y2k','memphis','neubrut'].includes(id));
+  });
+}, { threshold: 0.5 });
+
+sections.forEach(s => io.observe(s));
+
+/* ─── REVEAL ON SCROLL ─── */
+const revealObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+/* ─── SKEUOMORPHISM INTERACTIONS ─── */
+const skeuoBtn = document.getElementById('skeuoBtn');
+skeuoBtn.addEventListener('mousedown', () => skeuoBtn.classList.add('pressed'));
+skeuoBtn.addEventListener('mouseup', () => {
+  skeuoBtn.classList.remove('pressed');
+  skeuoBtn.textContent = '✓ Done';
+  setTimeout(() => skeuoBtn.textContent = 'Press', 800);
+});
+skeuoBtn.addEventListener('mouseleave', () => skeuoBtn.classList.remove('pressed'));
+
+const skeuoToggle = document.getElementById('skeuoToggle');
+skeuoToggle.addEventListener('click', () => skeuoToggle.classList.toggle('on'));
+
+// 3D tilt on notepad
+const notepad = document.getElementById('skeuoNotepad');
+notepad.addEventListener('mousemove', e => {
+  const r = notepad.getBoundingClientRect();
+  const cx = (e.clientX - r.left - r.width / 2) / (r.width / 2);
+  const cy = (e.clientY - r.top - r.height / 2) / (r.height / 2);
+  notepad.style.transform = `translateY(-10px) rotateY(${cx * 12}deg) rotateX(${-cy * 8}deg)`;
+});
+notepad.addEventListener('mouseleave', () => {
+  notepad.style.transform = '';
+});
+
+/* ─── NEOMORPHISM PLAYER ─── */
+let neoPlaying = false;
+let neoProgress = 40;
+let neoInterval = null;
+
+const neoPlayBtn = document.getElementById('neoPlay');
+const neoFill = document.getElementById('neoFill');
+
+function updateProgress() {
+  neoProgress = Math.min(100, neoProgress + 0.2);
+  neoFill.style.width = neoProgress + '%';
+  if (neoProgress >= 100) { neoProgress = 0; }
+}
+
+neoPlayBtn.addEventListener('click', () => {
+  neoPlaying = !neoPlaying;
+  neoPlayBtn.textContent = neoPlaying ? '⏸' : '⏵';
+  if (neoPlaying) {
+    neoInterval = setInterval(updateProgress, 100);
+  } else {
+    clearInterval(neoInterval);
+  }
+});
+
+document.querySelectorAll('.neo-ctrl-btn').forEach(btn => {
+  btn.addEventListener('mousedown', () => btn.classList.add('pressed'));
+  btn.addEventListener('mouseup', () => btn.classList.remove('pressed'));
+  btn.addEventListener('mouseleave', () => btn.classList.remove('pressed'));
+});
+
+const neoProgressWrap = document.getElementById('neoProgress');
+neoProgressWrap.addEventListener('click', e => {
+  const r = neoProgressWrap.getBoundingClientRect();
+  neoProgress = ((e.clientX - r.left) / r.width) * 100;
+  neoFill.style.width = neoProgress + '%';
+});
+
+/* ─── MINIMALISM TOGGLES ─── */
+document.querySelectorAll('[data-switch]').forEach(sw => {
+  sw.addEventListener('click', () => sw.classList.toggle('on'));
+});
+
+/* ─── BRUTALISM BAR ─── */
+let brutalAnimated = false;
+const brutalBarEl = document.getElementById('brutalBar');
+const brutalSection = document.getElementById('brutal');
+
+const brutalIO = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && !brutalAnimated) {
+      brutalAnimated = true;
+      setTimeout(() => { brutalBarEl.style.width = '78%'; }, 400);
+    }
+  });
+}, { threshold: 0.4 });
+brutalIO.observe(brutalSection);
+
+document.getElementById('brutalBtn').addEventListener('click', function() {
+  this.textContent = 'CLICKED!!';
+  this.style.background = '#ff0000';
+  setTimeout(() => { this.textContent = 'CLICK THIS NOW'; this.style.background = ''; }, 600);
+});
+
+/* ─── SPATIAL UI MOUSE PARALLAX ─── */
+const spatialScene = document.getElementById('spatialScene');
+const spatialCards = document.querySelectorAll('.spatial-card');
+
+spatialScene.addEventListener('mousemove', e => {
+  const r = spatialScene.getBoundingClientRect();
+  const nx = (e.clientX - r.left - r.width / 2) / (r.width / 2);
+  const ny = (e.clientY - r.top - r.height / 2) / (r.height / 2);
+
+  spatialCards.forEach(card => {
+    const d = parseFloat(card.dataset.depth);
+    card.style.transform = `rotateY(${nx * 22 * d}deg) rotateX(${-ny * 18 * d}deg) translateZ(${Math.abs(nx + ny) * 30 * d}px)`;
+    card.style.transition = 'transform 0.08s ease-out, box-shadow 0.3s';
+  });
+});
+
+spatialScene.addEventListener('mouseleave', () => {
+  spatialCards.forEach(card => {
+    card.style.transform = '';
+    card.style.transition = 'transform 0.6s cubic-bezier(0.25,0.8,0.25,1), box-shadow 0.3s';
+  });
+});
+
+/* ─── MAXI COUNTERS ─── */
+let maxiRun = false;
+const maxiSection = document.getElementById('maxi');
+const maxiIO = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && !maxiRun) {
+      maxiRun = true;
+      const nums = document.querySelectorAll('.maxi-counter-n[data-target]');
+      nums.forEach(el => {
+        const target = el.dataset.target;
+        if (target === '∞') { setTimeout(() => el.textContent = '∞', 800); return; }
+        const end = parseInt(target);
+        let current = 0;
+        const step = end / 60;
+        const timer = setInterval(() => {
+          current = Math.min(current + step, end);
+          el.textContent = Math.round(current) + (target.includes('%') ? '%' : '');
+          if (current >= end) {
+            el.textContent = target;
+            clearInterval(timer);
+          }
+        }, 25);
+      });
+    }
+  });
+}, { threshold: 0.4 });
+maxiIO.observe(maxiSection);
+
+/* ─── CLAY CARD BOUNCE ─── */
+document.querySelectorAll('.clay-card').forEach(card => {
+  card.addEventListener('click', () => {
+    card.style.transform = 'scale(0.9)';
+    card.style.transition = 'transform 0.12s';
+    setTimeout(() => {
+      card.style.transform = 'scale(1.08)';
+      card.style.transition = 'transform 0.2s cubic-bezier(0.25,0.8,0.25,1.4)';
+      setTimeout(() => {
+        card.style.transform = '';
+        card.style.transition = '';
+      }, 200);
+    }, 120);
+  });
+});
+</script>
+<script src="config.js"></script>
+<script src="extras.js"></script>
+<script src="chatbot.js"></script>
+</body>
+</html>
